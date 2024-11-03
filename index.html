@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333333;
+            padding: 15px;
+            text-align: center;
+        }
+        header a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+        }
+        h1 {
+            font-size: 2em;
+            margin-top: 20px;
+            color: #333333;
+        }
+        p.description {
+            font-size: 1.2em;
+            color: #666666;
+        }
+        .section {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .projects, .skills, .contact, .about {
+            margin-top: 40px;
+        }
+        .project-item, .skill-item {
+            background-color: #f8f8f8;
+            padding: 15px;
+            border: 1px solid #dddddd;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+        .project-title, .skill-title {
+            font-size: 1.4em;
+            color: #333333;
+        }
+        .project-description, .skill-description {
+            font-size: 1em;
+            color: #555555;
+        }
+        .contact-info {
+            font-size: 1.1em;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <a href="javascript:void(0)" onclick="showSection('home')">Home</a>
+        <a href="javascript:void(0)" onclick="showSection('about')">About Us</a>
+        <a href="javascript:void(0)" onclick="showSection('skills')">Skills</a>
+        <a href="javascript:void(0)" onclick="showSection('contact')">Contact Us</a>
+    </header>
+
+    <div class="container">
+        <!-- Halaman Home -->
+        <div id="home" class="section active">
+            <img src="WhatsApp Image 2024-11-03 at 10.33.55 PM.jpeg" alt="Foto Profil" class="profile-image">
+            <h1>Adiza Jaya Abrar</h1>
+            <p class="description">"Adiza Jaya Abrar adalah seorang desainer grafis berbakat yang memiliki kemampuan untuk menghidupkan ide-ide melalui visual yang kreatif dan menarik. Berpengalaman dalam berbagai proyek desain, mulai dari branding hingga media sosial,.</p>
+
+            <div class="projects">
+                <h2>Keahlian</h2>
+                <div class="project-item">
+                    <h3 class="project-title">Videographer</h3>
+                    <p class="project-description">Mampu mengopersikan camera sebagai media perancangan visual kreatif dengan mamadukan movement camera .</p>
+                </div>
+                <div class="project-item">
+                    <h3 class="project-title">Fotographer</h3>
+                    <p class="project-description">mempunyai Keahlian dibidang fotografi , mampu mengaabadikan momen dengan ciamik dengan memadukan timing,momen, dan pencahayaan yang baik</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Halaman About Us -->
+        <div id="about" class="section">
+            <h2>About Us</h2>
+            <p>"Adiza adalah seorang mahasiswa jurusan Desain Grafis yang memiliki keahlian di bidang desain grafis dan animasi. Dengan pemahaman mendalam tentang prinsip visual dan estetika, Adiza telah mengerjakan berbagai proyek pekerjaan yang mencakup beragam kebutuhan desain dan animasi. Setiap proyek menjadi kesempatan baginya untuk menggabungkan kreativitas dengan keterampilan teknis, menghasilkan karya yang efektif dan menarik. Komitmennya terhadap detail dan inovasi menjadikannya profesional yang siap membantu mewujudkan visi klien melalui desain yang berkualitas.".</p>
+        </div>
+
+        <!-- Halaman Skills -->
+        <div id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skill-item">
+                <h3 class="skill-title">Adobe premier pro & Adobe Photoshop</h3>
+                <p class="skill-description">Dapat Menggunakan secara profesional 2 software desain dan merancang seedemikiaan rupa project sesuai keinginan client.</p>
+            </div>
+            <div class="skill-item">
+                <h3 class="skill-title">Figma</h3>
+                <p class="skill-description">mampu menggunakan software figma dengan baik, membuat layouting untuk perancangan ui ux design for website, mampu memilih warna desain dan menyesuaikan icon website.</p>
+            </div>
+        </div>
+
+        <!-- Halaman Contact Us -->
+        <div id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p class="contact-info">Email: adizajayaabrar@gmail.com</p>
+            <p class="contact-info">Telepon: +62 123 4567 890</p>
+            <p class="contact-info">Instagram: <a href="www.instagram.com/" target="_blank">Lihat IG</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
